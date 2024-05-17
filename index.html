@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2701018</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globle.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav1 flex">
+                <div class="lsbtn flex">
+                    <button>LOGIN</button>
+                    <button>SIGN UP</button>
+                </div>
+            </div>
+
+            <div class="mainnav flex">
+                <div class="logo">
+                    <h1><a href="/">MR<span>XGAME</span></a></h1>
+                </div>
+                <div class="navlist">
+                    <ul class="flex">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#game">Games</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#con">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="headercont container flex">
+            <div class="labels flex">
+                <div class="flex">
+                    <i class="fa-solid fa-tv"></i>
+                    <h3 class="flex">
+                        <a href="#game">PLAYSTATION 4</a>
+                        <span>,</span>
+                        <a href="#game">STEAM</a>
+                    </h3>
+                </div>
+                <div class="flex">
+                    <i class="fa-solid fa-tags"></i>
+                    <h3 class="flex">
+                        <a href="#game">ACTION</a>
+                        <span>,</span>
+                        <a href="#game">ADVANTURE</a>
+                    </h3>
+                </div>
+            </div>
+            <h1 id="header_title">HORIZON 4</h1>
+            <p>
+                For the first time in the racing and driving genre,
+                 experience dynamic seasons in a shared open-world. 
+                 Explore beautiful scenery, collect over 450 cars and
+                  become a Horizon Superstar in historic Britain.</p>
+            <div class="headbtn flex">
+                <button onclick="togglePopupth()" class="button type1"></button></a>
+                <button class="button type2"></button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="threebox container flex animeX" id="home">
+            <div class="cbox">
+                <img src="img/box-1-bg.jpg" alt="title">
+                <div class="cboxde">
+                    <h5>OUR ALL Playstation GAMES</h5>
+                    <h2>MRXGAMES</h2>
+                    <p>
+                        PlayStation games transport you to realms beyond imagination,
+                         offering a rich tapestry of experiences. From epic adventures
+                          to immersive storytelling, each game is a gateway to new worlds, 
+                          thrilling battles, and unforgettable journeys.PlayStation continues
+                           to set the standard for console gaming.</p>
+                    <a href="/">All GAMES</a>
+                </div>
+            </div>
+            <div class="cbox">
+                <img src="img/box-2-bg.jpg" alt="title">
+                <div class="cboxde">
+                    <h5>OUR ALL PC GAMES</h5>
+                    <h2>MRXGAMES</h2>
+                    <p>
+                        PC gaming offers a limitless playground for exploration and innovation,
+                         blending cutting-edge graphics with a vast library of games. It's a realm
+                          where gamers can customize their experience, engage with vibrant communities,
+                           and enjoy the flexibility of modding and high-performance gameplay. 
+                          </p>
+                    <a href="/">All GAMES</a>
+                </div>
+            </div>
+            <div class="cbox">
+                <img src="img/box-3-bg.jpg" alt="title">
+                <div class="cboxde">
+                    <h5>OUR ALL XBOX GAMES</h5>
+                    <h2>MRXGAMES</h2>
+                    <p>Xbox combines high-powered gaming with a vast, diverse game library,
+                         inviting players into worlds both legendary and new. With Xbox Live 
+                         and Game Pass, it offers seamless online play and access to countless
+                          titles, ensuring a premium gaming experience marked by innovation and connection.</p>
+                    <a href="/">All GAMES</a>
+                </div>
+            </div>
+        </div>
+        <div class="gamesearch flex animeX">
+            <div class="container flex" id="search">
+                <h2>GAME SEARCH</h2>
+                <form action="submit" class="flex">
+                    <input type="text" placeholder="keyword">
+                    <select name="name" id="">
+                        <option value="">Platform</option>
+                        <option value="Mac OS X">Mac OS X</option>
+                        <option value="Microsoft Windows">Microsoft Windows</option>
+                        <option value="Origin">Origin</option>
+                        <option value="Playstation 4">Playstation 4</option>
+                        <option value="Steam">Steam</option>
+                    </select>
+                    <select name="name" id="">
+                        <option value="">Genre</option>
+                        <option value="ACTION">ACTION</option>
+                        <option value="ADVANTURE">ADVANTURE</option>
+                        <option value="RACING">RACING</option>
+                        <option value="SPORTS">SPORTS</option>
+                        <option value="SIMULATION">SIMULATION</option>
+                    </select>
+                    <select name="name" id="">
+                        <option value="">Language</option>
+                        <option value="English">English</option>
+                        <option value="German">German</option>
+                    </select>
+                    <button type="submit">SEARCH</button>
+                </form>
+            </div>
+            </div>
+        <div class="container filter flex animeX" id="game">
+            <button class="list active" data-filter="all">ALL</button>
+            <button  class="list" data-filter="play">PLAYSTATION 4</button>
+            <button  class="list" data-filter="UPLAY">PC</button>
+            <button  class="list" data-filter="XBOX ONE">XBOX</button>
+            <button  class="list" data-filter="STEAM">STEAM</button>
+        </div>
+        <div class="gamecards container flex animeX">
+            <div class="card" data-item="XBOX ONE">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/egypt and world.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ACTION</a>
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>EGYPT AND WORLD</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">PLAYSTATION 4</a>
+                            <span>,</span>
+                            <a href="/">PLAYSTATION 4</a>
+                        </h3>
+                    </div>
+                    <p>Egypt World is an interesting app for those who wants to get new emotions and open new possibilities.</p>
+                </div>
+            </div>
+            <div class="card" data-item="STEAM">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/spacewars.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>SPACE WARS</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">STEAM</a>
+                            <span>,</span>
+                            <a href="/">XBOX ONE</a>
+                        </h3>
+                    </div>
+                    <p>Experience the unique Dune universe, one of the most influential sci-fi settings ever created.</p>
+                </div>
+            </div>
+            <div class="card"  data-item="UPLAY">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/return of the cars.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">RACING</a>
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>RETURN OF THE CARS</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">UPLAY</a>
+                            <span>,</span>
+                            <a href="/">XBOX ONE</a>
+                        </h3>
+                    </div>
+                    <p>The downloadable version of this game supports English, French, Italian, German, Spanish, Polish, Portuguese and Russian.</p>
+                </div>
+            </div>
+            <div class="card"  data-item="play">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/cyberpunk.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ACTION</a>
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>CYBERPUNK</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">PLAYSTATION 4</a>
+                            <span>,</span>
+                            <a href="/">STEAM 4</a>
+                        </h3>
+                    </div>
+                    <p>Immerse yourself in the Cyberpunk universe, from the original storyline of Cyberpunk 2077.</p>
+                </div>
+            </div>
+            <div class="card"  data-item="play">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/lords-of-the-fallen-warrior.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>Lords of the fallen warrior</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">PLAYSTATION 4</a>
+                            <span>,</span>
+                            <a href="/">steam</a>
+                        </h3>
+                    </div>
+                    <p>Fearless fighters trained in the arts of melee combat with sword and shield.</p>
+                </div>
+            </div>
+            <div class="card"  data-item="play">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/the-witcher-1.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>EGYPT AND WORLD</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">PLAYSTATION 4</a>
+                            <span>,</span>
+                            <a href="/">origin</a>
+                        </h3>
+                    </div>
+                    <p>Egypt World is an interesting app for those who wants to get new emotions.</p>
+                </div>
+            </div>
+            <div class="card"  data-item="UPLAY">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/gta-5.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ACTION</a>
+                        <a href="/">racing</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>GTA 5</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">PLAYSTATION 5</a>
+                            <span>,</span>
+                            <a href="/">steam</a>
+                        </h3>
+                    </div>
+                    <p>LExperience blockbuster hits Grand Theft Auto V and GTA Online.</p>
+                </div>
+            </div>
+            <div class="card"  data-item="UPLAY">
+                <div class="cardimg">
+                    <a href="/">
+                        <img src="img/uncharted-4.jpg" alt="">
+                    </a>
+                    <div class="tegs">
+                        <a href="/">ADVANTURE</a>
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+                <div class="cardinfo">
+                    <h2>uncharted 4: thief's end</h2>
+                    <div class="playteg flex">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3 class="flex">
+                            <a href="/">PLAYSTATION 4</a>
+                            <span>,</span>
+                            <a href="/">steam</a>
+                        </h3>
+                    </div>
+                    <p>On the hunt for Captain Henry Avery’s long-lost treasure.</p>
+                </div>
+            </div>
+        </div>
+        <div class="allgamebtn flex container">
+            <a href="#">
+                <button>ALL GAMES</button>
+            </a>
+        </div> 
+
+    
+            <div class="newrelesed flex animeX">
+                <div class="container">
+                    <div class="newretitle">
+                        <h2>Forza horizon 5</h2>
+                        <h2>Is released!</h2>
+                    </div>
+                    <p>Forza Horizon 5 is a 2021 racing video game developed by Playground Games and
+                         published by Xbox Game Studios. It is the fifth Forza Horizon title and
+                          twelfth main instalment in the Forza series. The game is set in a 
+                          fictionalised representation of Mexico</p>
+                    <div class="flex">
+                        <a  onclick="togglePopupt()">read more</a>
+                        <a  onclick="togglePopupth()">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="featuredgames container flex animeX">
+                <h2>featured&nbsp;<span>games</span></h2>
+                <div class="fgamescards flex">
+                    <div class="fcard">
+                        <img src="img/spacewars.jpg" alt="">
+                        <div class="fcarddetails">
+                            <h2>space wars</h2>
+                            <div class="tegs2 flex">
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h3 class="flex">
+                                        <a href="/">steam</a>
+                                        <a href="/">xbox one</a>
+                                    </h3>
+                                </div>
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <h3 class="flex">
+                                        <a href="/">advanture</a>
+                                        <a href="/">fps</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fhovercont">
+                            <h2>space wars</h2>
+                        </div>
+                    </div>
+                    <div class="fcard">
+                        <img src="img/cyberpunk.jpg" alt="">
+                        <div class="fcarddetails">
+                            <h2>cyberpunk</h2>
+                            <div class="tegs2 flex">
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h3 class="flex">
+                                        <a href="/">steam</a>
+                                        <a href="/">xbox one</a>
+                                    </h3>
+                                </div>
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <h3 class="flex">
+                                        <a href="/">advanture</a>
+                                        <a href="/">fps</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fhovercont">
+                            <h2>cyberpunk</h2>
+                        </div>
+                    </div>
+                    <div class="fcard">
+                        <img src="img/the-witcher-1.jpg" alt="">
+                        <div class="fcarddetails">
+                            <h2>the worrior 3</h2>
+                            <div class="tegs2 flex">
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h3 class="flex">
+                                        <a href="/">steam</a>
+                                        <a href="/">xbox one</a>
+                                    </h3>
+                                </div>
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <h3 class="flex">
+                                        <a href="/">advanture</a>
+                                        <a href="/">fps</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fhovercont">
+                            <h2>the worrior 3</h2>
+                        </div>
+                    </div>
+                    <div class="fcard">
+                        <img src="img/gta-5.jpg" alt="">
+                        <div class="fcarddetails">
+                            <h2>Gta 5</h2>
+                            <div class="tegs2 flex">
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h3 class="flex">
+                                        <a href="/">steam</a>
+                                        <a href="/">xbox one</a>
+                                    </h3>
+                                </div>
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <h3 class="flex">
+                                        <a href="/">advanture</a>
+                                        <a href="/">fps</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fhovercont">
+                            <h2>Gta 5</h2>
+                        </div>
+                    </div>
+                    <div class="fcard">
+                        <img src="img/uncharted-4.jpg" alt="">
+                        <div class="fcarddetails">
+                            <h2>uncharted 4</h2>
+                            <div class="tegs2 flex">
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h3 class="flex">
+                                        <a href="/">steam</a>
+                                        <a href="/">xbox one</a>
+                                    </h3>
+                                </div>
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <h3 class="flex">
+                                        <a href="/">advanture</a>
+                                        <a href="/">fps</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fhovercont">
+                            <h2>uncharted 4</h2>
+                        </div>
+                    </div>
+                    <div class="fcard">
+                        <img src="img/return of the cars.jpg" alt="">
+                        <div class="fcarddetails">
+                            <h2>return of the cars</h2>
+                            <div class="tegs2 flex">
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h3 class="flex">
+                                        <a href="/">steam</a>
+                                        <a href="/">xbox one</a>
+                                    </h3>
+                                </div>
+                                <div class="teg flex">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <h3 class="flex">
+                                        <a href="/">advanture</a>
+                                        <a href="/">fps</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fhovercont">
+                            <h2>return of the cars</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="featuredgames container flex animeX" id="about">
+                <h2>ABOUT&nbsp;<span>MRXGAMES</span></h2>
+            <div class="newrelesed flex aboutus">
+                <div class="container flex">
+                    <div class="aboutusdetails">
+                        <div class="newretitle">
+                            <h2>MRXGAMES</h2>
+                        </div>
+                        <p> Welcome to MRXGAMES, your premier destination for
+                         PC, PlayStation, Xbox, and Steam gaming. Born from a
+                          passion for all things gaming, we bring together the
+                           latest news, reviews, and insider insights to create 
+                           a vibrant community for gamers worldwide. Our platform 
+                           is designed to connect gamers with the games they love, 
+                           offering a diverse collection of titles across all major
+                            platforms. Dive into our curated selection, share your 
+                            experiences, and discover new adventures with us.</p>
+                        <div class="flex">
+                            <a  onclick="togglePopup()">read more</a>
+                        </div>
+                    </div>
+                    <div class="aboutusimg">
+                        <img src="/img/aboutus.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="gamesearch flex animeX" id="con">
+                <div class="container flex">
+                    <h2>Contact Us</h2>
+                    <form action="submit" class="flex">
+                        <input type="text" placeholder="Your email address">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Type her....">
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+           
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn"  onclick="togglePopup()"><i class="fa-solid fa-xmark"></i></div>
+                    <h1>About</h1>
+                    <p>At MRXGAMES, we are driven by our passion for gaming,
+                         innovation, and community. Our platform is designed to be the
+                          go-to source for gamers of all stripes, whether you're a
+                         dedicated console player, a PC gaming aficionado, or someone
+                          who loves diving into the vast world of Steam games.</p>
+                </div>
+            </div>
+
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn"  onclick="togglePopupt()"><i class="fa-solid fa-xmark"></i></div>
+                    <h1>FORZA HORIZON 5</h1>
+                    <p>Welcome to EventLab 2.0! Available as a free update in Forza Horizon 5,
+                         we’ve added a whole host of improvements and features like multi-select,
+                          custom event flyers, creating and sharing prefabs, a brand new location
+                           to build on: EventLab Island and more!.</p>
+                </div>
+            </div>
+
+            <div class="popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn"  onclick="togglePopupth()"><i class="fa-solid fa-xmark"></i></div>
+                    <h1>FORZA HORIZON 4</h1>
+                     <h2>To buy this game please login to MRXGAMES</h2>
+                </div>
+            </div>
+            <div class="socialicons flex container animeX">
+                <a href="https://en-gb.facebook.com/login.php/" target="_blank" class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <h3>facebook</h3>
+                    </a>
+                <a href="https://twitter.com/?lang=en-gb" target="_blank" class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <h3>twiiter</h3>
+                </a>
+                <a href="https://www.google.com/" target="_blank" class="social">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <h3>google plus</h3>
+                </a>
+                <a href="https://youtube.com/login" target="_blank" class="social">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h3>youtube</h3>
+                </a>
+                <a href="https://www.instagram.com/accounts/emailsignup/" target="_blank" class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>instagram</h3>
+                </a>
+                <a href="https://www.twitch.tv/login" target="_blank" class="social">
+                    <i class="fa-brands fa-twitch"></i>
+                    <h3>twitch</h3>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <section class="footersec container flex">
+                <div class="footerh2 flex">
+                    <h2>about&nbsp;<span>us</span></h2>
+                    <h2>latest&nbsp;<span>news</span></h2>
+                    <h2>apps&nbsp;<span>& platforms</span></h2>
+                </div>
+                <div class="flex footermenu">
+                    <div class="faboutus">
+                        <p>Welcome to MRXGAMES, your premier destination for
+                            PC, PlayStation, Xbox, and Steam gaming.</p>
+                        <div class="flex">
+                            <ul class="flex">
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>Home</a></li>
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>Blog</a></li>
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>Games</a></li>
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>About</a></li>
+                            </ul>
+                            <ul class="flex">
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>Team</a></li>
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>Community</a></li>
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>eSport</a></li>
+                                <li><a href="/"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latestnews">
+                        <div class="fnews flex">
+                            <div class="fnewscard flex">
+                                <img src="img/blognews1.jpg" alt="">
+                                <div class="fnewsdetails">
+                                    <h4>about space and world</h4>
+                                    <p><i class="fa-regular fa-clock"></i><span>September 11, 2023</span></p>
+                                </div>
+                            </div>
+                            <div class="fnewscard flex">
+                                <img src="img/blognews2.jpg" alt="">
+                                <div class="fnewsdetails">
+                                    <h4>about space and world</h4>
+                                    <p><i class="fa-regular fa-clock"></i><span>September 11, 2023</span></p>
+                                </div>
+                            </div>
+                            <div class="fnewscard flex">
+                                <img src="img/blognews3.jpg" alt="">
+                                <div class="fnewsdetails">
+                                    <h4>about space and world</h4>
+                                    <p><i class="fa-regular fa-clock"></i><span>September 11, 2023</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appsec">
+                        <div class="platform flex">
+                            <div class="apps flex">
+                                <i class="fa-brands fa-apple"></i>
+                                <div class="appde">
+                                    <h4>Buy now via</h4>
+                                    <h4>Apple Store</h4>
+                                </div>
+                            </div>
+                            <div class="apps flex">
+                                <i class="fa-brands fa-google-play"></i>
+                                <div class="appde">
+                                    <h4>Buy now via</h4>
+                                    <h4>Google Play</h4>
+                                </div>
+                            </div>
+                            <div class="apps flex">
+                                <i class="fa-brands fa-steam"></i>
+                                <div class="appde">
+                                    <h4>Buy now via</h4>
+                                    <h4>Steam</h4>
+                                </div>
+                            </div>
+                            <div class="apps flex">
+                                <i class="fa-brands fa-windows"></i>
+                                <div class="appde">
+                                    <h4>Buy now via</h4>
+                                    <h4>windows</h4>
+                                </div>
+                            </div>
+                            <div class="apps flex">
+                                <i class="fa-brands fa-amazon"></i>
+                                <div class="appde">
+                                    <h4>Buy now via</h4>
+                                    <h4>Amezon</h4>
+                                </div>
+                            </div>
+                            <div class="apps flex">
+                                <i class="fa-brands fa-paypal"></i>
+                                <div class="appde">
+                                    <h4>Buy now via</h4>
+                                    <h4>Paypal</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="copyrightsec flex">
+                <div class="copyright container flex">
+                    <div class="flex">
+                        <h2>MR<span>xGAMES</span></h2>
+                        <p>Copyright &copy; 2024 All rights reserved.</p>
+                    </div>
+                    <ul class="flex">
+                        <li><a href="/" class="factive">Home</a></li>
+                        <li><a href="/">Help Center</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    
+
+            
+       
+
+    <script src="script.js"></script>
+</body>
+
+</html>
